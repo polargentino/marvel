@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&display=swap');
+
+body {
+  font-family: 'Comic Neue', sans-serif;
+  background-image: url('fondo-pantalla-estilo-comico_79603-1248.avif');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  color: #f0131e;
+  text-shadow: 2px 2px #000;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #f0131e;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #f0131e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
+#characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.character {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #f0131e;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+}
+
+.character img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.character h2 {
+  font-family: 'Bangers', cursive;
+  color: #ffcc00;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.character p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+#loadMore {
+  background-color: #f0131e;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#loadMore:hover {
+  background-color: #ff0000;
+}
+
+#marvelImg {
+  width: 150px; 
+  height: auto;
+  border-radius: 50%; 
+  position: absolute; 
+}
+
+.halo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 0, 0.5); /* Color del halo */
+    pointer-events: none; /* El halo no interfiere con el clic */
+    transform: translate(-50%, -50%); /* Centra el halo en el cursor */
+    transition: transform 0.1s ease;
+  }
+  
